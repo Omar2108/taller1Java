@@ -20,7 +20,12 @@ public class Fruta {
      * Creacion del constructor de la clase 
      */
     
-    Fruta(String name,float averageWeigth,ArrayList<String> colors){
+    public Fruta(String name, float averageWeigth){
+        this.name = name;
+        this.averageWeigth = averageWeigth;
+    }
+
+    Fruta(String name, float averageWeigth, ArrayList<String> colors) {
         this.name = name;
         this.averageWeigth = averageWeigth;
         this.colors = colors;
@@ -32,8 +37,8 @@ public class Fruta {
      * @return 
      */
     
-    public String setColor(String name){
-        return this.name = name; 
+    public boolean setColor(String name){   
+        return this.colors.add(name); 
     }
     
     public ArrayList<String> getColors(){
