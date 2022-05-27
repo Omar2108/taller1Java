@@ -18,6 +18,8 @@ public class Fruta {
     
     /**
      * Creacion del constructor de la clase 
+     * @param name
+     * @param averageWeigth
      */
     
     public Fruta(String name, float averageWeigth){
@@ -28,16 +30,17 @@ public class Fruta {
     Fruta(String name, float averageWeigth, ArrayList<String> colors) {
         this.name = name;
         this.averageWeigth = averageWeigth;
-        this.colors = colors;
+        this.colors = new ArrayList();
     }
     
     /**
-     * Creacion de metodos 
+     * Creacion de metodos set y get 
      * @param name
      * @return 
      */
     
-    public boolean setColor(String name){   
+    public boolean setColor(String name){
+        
         return this.colors.add(name); 
     }
     
